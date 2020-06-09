@@ -1,6 +1,6 @@
 # Project pilosa-pi
 
-Ever wanted to explore the digits of PI in pilosa? I did.  I just implemented [[https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula]Bailey–Borwein–Plouffe] in go and voilà
+Ever wanted to explore the digits of PI in pilosa? I did.  I just implemented [Bailey–Borwein–Plouffe](https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula) in go and voilà
 
 ## Installation
 

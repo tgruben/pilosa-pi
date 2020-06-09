@@ -38,7 +38,7 @@ func build(n, SHARDWIDTH int) *roaring.Bitmap {
 
 	bit := uint64(0)
 	bits := make([]uint64, 0, SHARDWIDTH)
-	for i := 0; i < n; n++ {
+	for i := 0; i < n; i++ {
 		hexdigit := next()
 		if hexdigit&1 > 0 {
 			bits = append(bits, bit)
@@ -59,6 +59,9 @@ func build(n, SHARDWIDTH int) *roaring.Bitmap {
 		if bit == uint64(SHARDWIDTH) {
 			bm.AddN(bits...)
 			bits = bits[:0]
+		}
+		if i%1000 == 0 {
+			fmt.Println("Processed", i)
 		}
 
 	}
